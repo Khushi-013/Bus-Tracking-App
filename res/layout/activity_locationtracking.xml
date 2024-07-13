@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="locationtrackingVM" type="com.eamtrackerapp.app.modules.locationtracking.data.viewmodel.LocationtrackingVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnlocationtracki"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowlocationtracki"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleyellow_800">
+                <ImageView android:id="@+id/imageImageEight"
+                    android:layout_height="@dimen/_64pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="@dimen/_64pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_image8}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image8"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLocationTracki"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_19pxv"
+                    android:layout_marginEnd="@dimen/_95pxh"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_weight="0.73"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{locationtrackingVM.locationtrackingModel.txtLocationTracki}"
+                    style="@style/txtHandleeregular24" tools:text="@string/msg_location_tracki"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <FrameLayout android:id="@+id/frameStack"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_148pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_41pxh"
+            android:layout_marginStart="@dimen/_41pxh"
+            android:layout_marginTop="@dimen/_283pxv" android:layout_width="@dimen/_269pxh">
+            <FrameLayout android:id="@+id/frameStackrectanglenine"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_132pxv"
+                android:layout_marginBottom="@dimen/_10pxv" android:layout_width="@dimen/_269pxh">
+                <fragment android:id="@+id/mapRectangleNine"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_132pxv"
+                    android:layout_width="match_parent" android:name="com.google.android.gms.maps.SupportMapFragment"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtGetLocationSt"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_41pxv"
+                    android:layout_marginEnd="@dimen/_27pxh"
+                    android:layout_marginStart="@dimen/_27pxh"
+                    android:layout_marginTop="@dimen/_41pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{locationtrackingVM.locationtrackingModel.txtGetLocationSt}"
+                    style="@style/txtHandleeregular24" tools:text="@string/msg_get_location_st"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/imageImageNine"
+                android:layout_gravity="bottom|end"
+                android:layout_height="@dimen/_72pxh"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="@dimen/_58pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_image9}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image9"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

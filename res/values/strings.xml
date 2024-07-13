@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">eam_tracker_app</string>
+    <string name="loading">Loading?</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="msg_location_tracki">Location Tracking</string>
+    <string name="msg_signature_appro">Signature Approval</string>
+    <string name="lbl_reset">Reset</string>
+    <string name="lbl_add_due_date">Add Due Date : </string>
+    <string name="lbl_search">Search</string>
+    <string name="lbl_task_list">Task List</string>
+    <string name="lbl_tracker">Tracker</string>
+    <string name="msg_don_t_have_an_a">Don;t have an account ? SignUp</string>
+    <string name="lbl_id_211583201">Id : 211583201</string>
+    <string name="lbl_phone_no">Phone no.</string>
+    <string name="msg_get_location_st">Get Location Status</string>
+    <string name="msg_confirm_passwor">Confirm Password</string>
+    <string name="msg_don_t_have_an_a2">Don;t have an account ? </string>
+    <string name="lbl_reset_password">Reset Password</string>
+    <string name="msg_work_in_progres">Work in Progress</string>
+    <string name="lbl_signup">SignUp</string>
+    <string name="msg_username_khus">Username : Khushi Sinha</string>
+    <string name="lbl_update_password">Update Password</string>
+    <string name="lbl_login">Login</string>
+    <string name="lbl_task_detail">Task Detail</string>
+    <string name="msg_email_id_phone">Email Id/Phone no.</string>
+    <string name="msg_forgot_password2">Forgot Password ?  </string>
+    <string name="lbl_new_password">New Password</string>
+    <string name="msg_add_employee_id">Add Employee Id :</string>
+    <string name="lbl_welcome_khushi">Welcome Khushi</string>
+    <string name="lbl_employee_id">Employee Id</string>
+    <string name="lbl_team_a">Team A :</string>
+    <string name="lbl_team_b">Team B :</string>
+    <string name="lbl_password">Password</string>
+    <string name="msg_forgot_password">Forgot Password ?  Reset</string>
+    <string name="msg_add_task_title">Add Task Title : </string>
+    <string name="msg_upload_signatur">Upload Signature</string>
+    <string name="lbl_eam">EAM</string>
+    <string name="lbl_team_chat">Team Chat</string>
+    <string name="lbl_task_name">Task Name</string>
+    <string name="msg_add_task_detail">Add Task Detail :</string>
+    <string name="lbl_register">Register</string>
+    <string name="lbl_username">Username</string>
+    <string name="lbl_submit">Submit</string>
+    <string name="msg_multi_location">Multi-location Team</string>
+    <string name="lbl_email_id">Email Id.</string>
+    <string name="msg_current_passwor">Current Password</string>
+    <string name="msg_contact_92846">Contact : 9284608501</string>
+    <!--TODO ENTER YOUR_API_KEY-->
+    <string name="str_maps_api_key">MAPS_API_KEY</string>
+</resources>

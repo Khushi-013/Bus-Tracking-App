@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginVM" type="com.eamtrackerapp.app.modules.login.data.viewmodel.LoginVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearLogin"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowlogin"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleyellow_800">
+                <ImageView android:id="@+id/imageImageEight"
+                    android:layout_height="@dimen/_64pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="@dimen/_64pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_image8}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image8"/>
+
+                <TextView
+                    android:id="@+id/txtLogin"
+                    style="@style/txtHandleeregular24"
+                    android:layout_width="182dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_marginEnd="@dimen/_213pxh"
+                    android:layout_marginBottom="@dimen/_19pxv"
+                    android:layout_weight="0.45"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{loginVM.loginModel.txtLogin}"
+                    tools:text="@string/lbl_login" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnEmailIdphoneNoOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_131pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_13pxv" android:singleLine="true"
+            android:text="@string/msg_email_id_phone"
+            android:textAllCaps="false"
+            style="@style/btnSolidRoundedOutline" tools:text="@string/msg_email_id_phone"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnPassword"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_13pxv" android:singleLine="true"
+            android:text="@string/lbl_password"
+            android:textAllCaps="false"
+            style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_password"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnLoginOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_56pxv"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_60pxv"
+            android:layout_width="@dimen/_180pxh"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@string/lbl_login" android:textAllCaps="false"
+            style="@style/btnSolidRounded" tools:text="@string/lbl_login"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtConfirmation"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_47pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{loginVM.loginModel.txtConfirmation}"
+            style="@style/txtHandleeregular24" tools:text="@string/msg_don_t_have_an_a"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{loginVM.loginModel.txtLanguage}"
+            style="@style/txtHandleeregular24" tools:text="@string/msg_forgot_password"/>
+    </LinearLayout>
+</layout>

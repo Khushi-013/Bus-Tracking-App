@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="txtSolidRoundedOutline">
+        <item name="android:textSize">@dimen/_24pxh</item>
+        <item name="android:textColor">@color/gray_700_68</item>
+        <item name="android:fontFamily">@font/handlee</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:background">@drawable/rectangle_bg_white_a700_border_black_900_radius_20</item>
+    </style>
+    <style name="txtSolidRounded">
+        <item name="android:textSize">@dimen/_24pxh</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/handlee</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:background">@drawable/rectangle_bg_amber_a200_radius_20</item>
+    </style>
+    <style name="btnSolidRounded">
+        <item name="android:textSize">@dimen/_24pxh</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/handlee</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:background">@drawable/rectangle_bg_amber_a200_radius_20</item>
+    </style>
+    <style name="txtHandleeregular24">
+        <item name="android:textSize">@dimen/_24pxh</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/handlee</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="groupStyleamber_A200cornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_amber_a200_radius_20</item>
+    </style>
+    <style name="txtHandleeregular16">
+        <item name="android:textSize">@dimen/_16pxh</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/handlee</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtHandleeregular28">
+        <item name="android:textSize">@dimen/_28pxh</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/handlee</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="groupStylewhite_1">
+        <item name="android:background">@drawable/rectangle_bg_white_a700_radius_50</item>
+    </style>
+    <style name="groupStylewhite_A700cornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_white_a700_radius_20</item>
+    </style>
+    <style name="btnSolidRounded_1">
+        <item name="android:textSize">@dimen/_32pxh</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/handlee</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:background">@drawable/rectangle_bg_amber_a200_radius_20</item>
+    </style>
+    <style name="groupStyleamber_A201cornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_amber_a201_radius_20</item>
+    </style>
+    <style name="txt">
+        <item name="android:textSize">@dimen/_64pxh</item>
+        <item name="android:textColor">@color/teal_500</item>
+        <item name="android:fontFamily">@font/love_ya_like_a_sister</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:background">@drawable/rectangle_dhi_0</item>
+    </style>
+    <style name="txtregular0">
+        <item name="android:textColor">@color/black_900</item>
+    </style>
+    <style name="txt_1">
+        <item name="android:textSize">@dimen/_36pxh</item>
+        <item name="android:textColor">@color/light_green_A200</item>
+        <item name="android:fontFamily">@font/mystery_quest</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:background">@drawable/rectangle_dhi_0</item>
+    </style>
+    <style name="groupStyleyellow_800">
+        <item name="android:background">@drawable/rectangle_bg_yellow_800</item>
+    </style>
+    <style name="txtSolidRoundedOutline_1">
+        <item name="android:textSize">@dimen/_24pxh</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/handlee</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:background">@drawable/rectangle_bg_white_a700_border_black_900_radius_20</item>
+    </style>
+    <style name="txtSolidRoundedOutline_2">
+        <item name="android:textSize">@dimen/_8pxh</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:background">@drawable/rectangle_bg_white_a700_border_black_900_radius_20</item>
+    </style>
+    <style name="txtSolidRounded_1">
+        <item name="android:textSize">@dimen/_32pxh</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/handlee</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:background">@drawable/rectangle_bg_amber_a200_radius_20</item>
+    </style>
+    <style name="btnSolidRoundedOutline">
+        <item name="android:textSize">@dimen/_24pxh</item>
+        <item name="android:textColor">@color/gray_700_68</item>
+        <item name="android:fontFamily">@font/handlee</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:background">@drawable/rectangle_bg_white_a700_border_black_900_radius_21</item>
+    </style>
+    <style name="groupStylewhite_A700">
+        <item name="android:background">@drawable/rectangle_bg_white_a700</item>
+    </style>
+    <style name="txtHandleeregular20">
+        <item name="android:textSize">@dimen/_20pxh</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/handlee</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="searchViewstack" parent="Widget.AppCompat.SearchView">
+        <item name="android:textSize">@dimen/_8pxh</item>
+        <item name="android:textColorPrimary">@color/black_900</item>
+        <item name="android:textColorHint">@color/gray_600</item>
+    </style>
+</resources>

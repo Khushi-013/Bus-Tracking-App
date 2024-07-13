@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="signatureapprovalVM" type="com.eamtrackerapp.app.modules.signatureapproval.data.viewmodel.SignatureapprovalVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumnsignatureappro"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowsignatureappro"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleyellow_800">
+                <ImageView android:id="@+id/imageImageEight"
+                    android:layout_height="@dimen/_64pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="@dimen/_64pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_image8}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image8"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSignatureAppro"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_19pxv"
+                    android:layout_marginEnd="@dimen/_78pxh"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_weight="0.74"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{signatureapprovalVM.signatureapprovalModel.txtSignatureAppro}"
+                    style="@style/txtHandleeregular24" tools:text="@string/msg_signature_appro"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <FrameLayout android:id="@+id/frameStackrectangleten"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_132pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_37pxh"
+            android:layout_marginStart="@dimen/_37pxh"
+            android:layout_marginTop="@dimen/_48pxv" android:layout_width="@dimen/_269pxh">
+            <ImageView android:id="@+id/imageRectangleTen"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_132pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_rectangle9"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle9"/>
+            <FrameLayout android:id="@+id/frameStackuploadsignatur"
+                android:layout_gravity="bottom|end"
+                android:layout_height="@dimen/_89pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_217pxh">
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtUploadSignatur"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{signatureapprovalVM.signatureapprovalModel.txtUploadSignatur}"
+                    style="@style/txtHandleeregular24" tools:text="@string/msg_upload_signatur"/>
+                <ImageView android:id="@+id/imageImageEleven"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="@dimen/_64pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_64pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_image11}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image11"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

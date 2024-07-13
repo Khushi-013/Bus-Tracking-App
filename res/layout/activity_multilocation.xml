@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="multilocationVM" type="com.eamtrackerapp.app.modules.multilocation.data.viewmodel.MultilocationVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearMultiLocation"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowmultilocation"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleyellow_800">
+                <ImageView android:id="@+id/imageImageEight"
+                    android:layout_height="@dimen/_64pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="@dimen/_64pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_image8}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image8"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMultilocation"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_22pxv"
+                    android:layout_marginEnd="@dimen/_69pxh"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_weight="0.75"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{multilocationVM.multilocationModel.txtMultilocation}"
+                    style="@style/txtHandleeregular24" tools:text="@string/msg_multi_location"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <FrameLayout android:id="@+id/frameStackteama"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_33pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_6pxv" android:layout_width="@dimen/_84pxh">
+            <TextView android:ellipsize="end"
+                android:gravity="top|start" android:id="@+id/txtTeamA"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{multilocationVM.multilocationModel.txtTeamA}"
+                style="@style/txtHandleeregular24" tools:text="@string/lbl_team_a"/>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtTeamAOne"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{multilocationVM.multilocationModel.txtTeamAOne}"
+                style="@style/txtHandleeregular24" tools:text="@string/lbl_team_a"/>
+        </FrameLayout>
+        <View
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_21"
+            android:id="@+id/viewRectangleNine"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_44pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_333pxh"/>
+        <View
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_21"
+            android:id="@+id/viewRectangleTwelve"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_44pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_333pxh"/>
+        <View
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_21"
+            android:id="@+id/viewRectangleThirteen"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_44pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_333pxh"/>
+        <View
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_21"
+            android:id="@+id/viewRectangleFourteen"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_44pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_333pxh"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTeamB"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_41pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{multilocationVM.multilocationModel.txtTeamB}"
+            style="@style/txtHandleeregular24" tools:text="@string/lbl_team_b"/>
+        <View
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_21"
+            android:id="@+id/viewRectangleFifteen"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_44pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_14pxv" android:layout_width="@dimen/_333pxh"/>
+        <View
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_21"
+            android:id="@+id/viewRectangleSixteen"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_44pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_333pxh"/>
+        <View
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_21"
+            android:id="@+id/viewRectangleSeventeen"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_44pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_333pxh"/>
+        <View
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_21"
+            android:id="@+id/viewRectangleEighteen"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_44pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_333pxh"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnTeamChat"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_56pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_62pxv"
+            android:layout_width="@dimen/_180pxh"
+            android:paddingBottom="@dimen/_6pxv"
+            android:paddingEnd="@dimen/_20pxh"
+            android:paddingStart="@dimen/_19pxh"
+            android:paddingTop="@dimen/_6pxv" android:singleLine="true"
+            android:text="@string/lbl_team_chat"
+            android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/lbl_team_chat"/>
+    </LinearLayout>
+</layout>
